@@ -1,38 +1,23 @@
 import React from 'react';
+
+import Logo from '../images/Logo.svg';
 import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
+import { Header, NavContainer, Image, NavLinkContainer, NavItem } from './HeaderStyled';
 
-import styled from 'styled-components';
-
-const HeaderContainer = styled.div`
-  background: rebeccapurple;
-  margin-bottom: 1.45rem;
-`;
-const TitleWrapper = styled.div`
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 1.45rem 1.0875rem;
-`;
-const Title = styled.h1`
-  margin: 0;
-`;
-const TitleLink = styled(Link)`
-  color: white;
-  text-decoration: none;
-`;
-
-const Header = ({ siteTitle }) => (
-  <HeaderContainer>
-    <TitleWrapper>
-      <Title>
-        <TitleLink to="/">{siteTitle}</TitleLink>
-      </Title>
-    </TitleWrapper>
-  </HeaderContainer>
-);
-
-Header.propTypes = {
-  siteTitle: PropTypes.string.isRequired,
+const HeaderNav = () => {
+  return (
+    <Header>
+      <NavContainer>
+        <Image src={Logo} alt="Lending Hand Logo" />
+        <NavLinkContainer>
+          <NavItem href="#Home">Home</NavItem>
+          <NavItem href="#About">About</NavItem>
+          <NavItem href="#Download">Download</NavItem>
+          <NavItem href="#Contact">Contact</NavItem>
+        </NavLinkContainer>
+      </NavContainer>
+    </Header>
+  );
 };
 
-export default Header;
+export default HeaderNav;

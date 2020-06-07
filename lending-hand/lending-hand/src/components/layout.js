@@ -3,17 +3,8 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
-import Header from './header';
-
 import styled from 'styled-components';
 import { GlobalStyle } from '../styles';
-
-const Content = styled.div`
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
-`;
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -31,14 +22,14 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Lending Hand Offical Landing Page' },
+            { name: 'keywords', content: 'Lending Hand, Yakware LLC' },
           ]}>
           <html lang="en" />
         </Helmet>
         <GlobalStyle />
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <Content>{children}</Content>
+
+        <>{children}</>
       </>
     )}
   />

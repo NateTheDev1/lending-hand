@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter with Styled Components',
-    description: 'Default gatsby starter with styled components',
+    title: 'Lending Hand',
+    description: 'Official Lending Hand Landing Page',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -9,13 +9,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Lending Hand',
+        short_name: 'Lending Hand',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        background_color: '',
+        theme_color: '',
+        display: '',
+        icon: 'src/images/', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',

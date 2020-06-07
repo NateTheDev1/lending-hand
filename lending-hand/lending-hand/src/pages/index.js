@@ -1,14 +1,16 @@
 import React from 'react';
-import { Link } from 'gatsby';
+
+//Components
+import HeaderNav from '../components/Header';
 
 import Layout from '../components/layout';
+import Home from '../components/Home';
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <HeaderNav />
+    <Home />
+    <h1>Under</h1>
   </Layout>
 );
 
