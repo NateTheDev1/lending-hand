@@ -32,7 +32,7 @@ const Home = () => {
           </a>
         </PhoneContainer>
         <div>
-          <img src={Phone} />
+          <img src={Phone} alt="Iphone 11 Lending Hand App" />
         </div>
       </Container>
     </HomeSection>

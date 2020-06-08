@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const HomeSection = styled.section`
   margin: 0 auto;
   max-width: 1440px;
-  height: 100vh;
+  height: 90vh;
 `;
 
 export const PhoneContainer = styled.section`

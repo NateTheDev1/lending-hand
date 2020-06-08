@@ -5,7 +5,8 @@ import mixins from './mixins';
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
   * {
-    box-sizing: border-box
+    box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
   body {
