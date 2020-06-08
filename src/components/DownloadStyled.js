@@ -31,6 +31,14 @@ export const DownloadContent = styled.div`
     padding: 1%;
     width: 100%;
   }
+
+  .DownloadButton {
+    transition: 0.5s;
+
+    &:hover {
+      transform: translateY(20px);
+    }
+  }
 `;
 
 export const Paragraph = styled.p`

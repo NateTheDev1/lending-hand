@@ -79,6 +79,20 @@ export const Button = styled.button`
   font-weight: 700;
   font-size: 1.2rem;
   cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    border: 1px solid #6208ff;
+    background: white;
+    color: black;
+    width: 300px;
+  }
 `;
 
-export const ActionButton = styled.img``;
+export const ActionButton = styled.img`
+  transition: 0.5s;
+
+  &:hover {
+    transform: translateY(20px);
+  }
+`;

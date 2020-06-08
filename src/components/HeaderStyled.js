@@ -38,4 +38,10 @@ export const NavItem = styled.a`
   font-size: 1.2rem;
   font-weight: 700;
   text-decoration: none;
+  transition: 0.5s;
+
+  &:hover {
+    font-size: 1.3rem;
+    color: #6208ff;
+  }
 `;

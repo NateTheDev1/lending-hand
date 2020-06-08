@@ -20,7 +20,11 @@ const Download = () => {
           been the.
         </Paragraph>
         <a href="#AppStore">
-          <img src={DownloadButton} alt="Download Lending Hand On The App Store" />
+          <img
+            src={DownloadButton}
+            alt="Download Lending Hand On The App Store"
+            className="DownloadButton"
+          />
         </a>
       </DownloadContent>
     </DownloadSection>

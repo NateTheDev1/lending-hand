@@ -7,13 +7,28 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: smooth;
   }
 
   body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
+    animation: transitionIn 1.5s
   }
 
+
+
+  @keyframes transitionIn {
+    from {
+      opacity: 0;
+
+    }
+
+    to {
+      opacity: 1;
+
+    }
+  }
 
 `;
 
