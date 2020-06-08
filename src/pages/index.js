@@ -8,6 +8,7 @@ import Home from '../components/Home';
 import About from '../components/About';
 import Download from '../components/Download';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const IndexPage = () => (
   <Layout>
@@ -16,6 +17,7 @@ const IndexPage = () => (
     <About />
     <Download />
     <Contact />
+    <Footer />
   </Layout>
 );
 
