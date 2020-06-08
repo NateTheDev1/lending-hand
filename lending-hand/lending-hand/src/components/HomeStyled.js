@@ -18,12 +18,13 @@ export const Container = styled.section`
   height: 75vh;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 `;
 
 export const Title = styled.h1`
   font-weight: 700;
   font-size: 3rem;
-  margin-bottom: 5%;
+  margin-bottom: 8%;
   span {
     color: #6208ff;
   }
@@ -31,7 +32,7 @@ export const Title = styled.h1`
 
 export const Paragraph = styled.p`
   margin: 0;
-  margin-bottom: 5%;
+  margin-bottom: 8%;
   line-height: 44px;
   font-weight: 600;
   font-size: 1.3rem;
@@ -47,4 +48,7 @@ export const Button = styled.button`
   height: 50px;
   font-weight: 700;
   font-size: 1.2rem;
+  cursor: pointer;
 `;
+
+export const ActionButton = styled.img``;

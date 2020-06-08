@@ -1,10 +1,19 @@
 import React from 'react';
-import Phone from '../images/Iphone11.svg';
-import { HomeSection, Container, PhoneContainer, Title, Paragraph, Button } from './HomeStyled';
+import Phone from '../images/ReplaceInsideWithAppImage.svg';
+import {
+  HomeSection,
+  Container,
+  PhoneContainer,
+  Title,
+  Paragraph,
+  Button,
+  ActionButton,
+} from './HomeStyled';
+import ActionButtonDown from '../images/ActionButtonDown.svg';
 
 const Home = () => {
   return (
-    <HomeSection>
+    <HomeSection id="Home">
       <Container>
         <PhoneContainer>
           <Title>
@@ -18,8 +27,13 @@ const Home = () => {
           <a href="#Download">
             <Button>Get Started</Button>
           </a>
+          <a href="#About" style={{ marginTop: '8%' }} className="action-btn-down">
+            <ActionButton src={ActionButtonDown} alt="Continue To Next Page" />
+          </a>
         </PhoneContainer>
-        <img src={Phone} />
+        <div>
+          <img src={Phone} />
+        </div>
       </Container>
     </HomeSection>
   );
