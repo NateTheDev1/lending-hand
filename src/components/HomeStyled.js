@@ -3,12 +3,7 @@ import styled from 'styled-components';
 export const HomeSection = styled.section`
   margin: 0 auto;
   max-width: 1440px;
-  height: 90vh;
-
-  @media (max-width: 850px) {
-    margin-top: 25%;
-    height: 75vh;
-  }
+  min-height: 100vh;
 `;
 
 export const PhoneContainer = styled.section`
@@ -23,27 +18,35 @@ export const PhoneContainer = styled.section`
 `;
 
 export const Container = styled.section`
-  margin-top: 10%;
-  height: 100vh;
+  margin-top: 20%;
+  /* height: 100vh; */
+
   display: flex;
   justify-content: space-around;
   align-items: center;
 
   @media (max-width: 850px) {
+    margin-top: 0;
     width: 100%;
+
+    padding: 2%;
     text-align: center;
     flex-direction: column;
     justify-content: center;
   }
 
+  /*
   @media (max-width: 600px) {
     margin-top: 50%;
   }
-
-  @media (max-width: 424px) {
-    margin-top: -50%;
+ */
+  @media (max-width: 600px) {
     img {
       display: none;
+    }
+
+    .BigLogo {
+      display: inline !important;
     }
   }
 `;

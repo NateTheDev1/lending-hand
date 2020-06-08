@@ -1,5 +1,7 @@
 import React from 'react';
 import Phone from '../images/ReplaceInsideWithAppImage.svg';
+
+import Logo from '../images/Logo.svg';
 import {
   HomeSection,
   Container,
@@ -16,6 +18,7 @@ const Home = () => {
     <HomeSection id="Home">
       <Container>
         <PhoneContainer>
+          <img src={Logo} alt="Lending Hand Logo" style={{ display: 'none' }} className="BigLogo" />
           <Title>
             Join <span>Lending Hand</span> Today.
           </Title>
