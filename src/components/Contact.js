@@ -3,6 +3,10 @@ import styled from 'styled-components';
 
 const ContactSection = styled.section`
   background: #f9f9fa;
+  @media (max-width: 850px) {
+    text-align: center;
+    padding: 2%;
+  }
 `;
 
 const TopDiv = styled.div`
@@ -27,6 +31,9 @@ const CardDiv = styled.div`
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1440px;
+  @media (max-width: 850px) {
+    flex-direction: column;
+  }
 `;
 
 const Card = styled.div`
@@ -38,14 +45,18 @@ const Card = styled.div`
     background: white;
     height: 40vh;
   }
+
+  @media (max-width: 850px) {
+    width: 100%;
+  }
 `;
 
 const CardTitle = styled.h3`
   text-align: center;
-  letter-spacing: 18px;
-  font-weight: 800;
+  letter-spacing: 15px;
+  font-weight: 600;
 
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-transform: uppercase;
 `;
 

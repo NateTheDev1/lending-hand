@@ -2,6 +2,12 @@ import styled from 'styled-components';
 
 export const AboutSection = styled.section`
   background: #f9f9fa;
+  @media (max-width: 850px) {
+    margin-top: 50%;
+  }
+  @media (max-width: 630px) {
+    margin-top: 75%;
+  }
 `;
 
 export const Container = styled.section`
@@ -28,6 +34,12 @@ export const MiddleContainer = styled.div`
   margin-top: 2%;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 850px) {
+    flex-direction: column;
+    .GiantLogo {
+      display: none;
+    }
+  }
 
   align-items: center;
 `;

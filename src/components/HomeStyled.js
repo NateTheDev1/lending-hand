@@ -4,6 +4,11 @@ export const HomeSection = styled.section`
   margin: 0 auto;
   max-width: 1440px;
   height: 90vh;
+
+  @media (max-width: 850px) {
+    margin-top: 25%;
+    height: 75vh;
+  }
 `;
 
 export const PhoneContainer = styled.section`
@@ -11,14 +16,36 @@ export const PhoneContainer = styled.section`
   justify-content: center;
   flex-direction: column;
   width: 50%;
+  @media (max-width: 850px) {
+    align-items: center;
+    width: 100%;
+  }
 `;
 
 export const Container = styled.section`
   margin-top: 10%;
-  height: 75vh;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: 850px) {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 50%;
+  }
+
+  @media (max-width: 424px) {
+    margin-top: -50%;
+    img {
+      display: none;
+    }
+  }
 `;
 
 export const Title = styled.h1`

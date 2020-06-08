@@ -15,7 +15,7 @@ module.exports = {
         background_color: '',
         theme_color: '',
         display: '',
-        icon: 'src/images/', // This path is relative to the root of the site.
+        icon: 'src/images/GiantLogo.svg', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',

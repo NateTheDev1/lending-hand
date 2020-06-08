@@ -28,7 +28,7 @@ const About = () => {
             <p>Lorem Ipsum is simply dummy text of the printing and.</p>
           </IconContainer>
 
-          <img src={GiantLogo} alt="Lending Hand Logo" />
+          <img src={GiantLogo} alt="Lending Hand Logo" className="GiantLogo" />
 
           <IconContainer>
             <img src={HandsSolid} alt="2 Extended Helping Hands" />

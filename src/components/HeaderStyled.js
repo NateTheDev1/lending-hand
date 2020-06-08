@@ -6,9 +6,12 @@ export const Header = styled.header`
   width: 100%;
   top: 0;
   z-index: 9999;
-
   @media (max-width: 850px) {
     display: none;
+  }
+
+  @media (max-width: 1470px) {
+    padding: 1.25%;
   }
 `;
 

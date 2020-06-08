@@ -7,11 +7,18 @@ export const DownloadSection = styled.section`
   padding-bottom: 5%;
   display: flex;
   justify-content: center;
+  @media (max-width: 850px) {
+    padding: 2%;
+    text-align: center;
+  }
 `;
 
 export const PhoneDiv = styled.div`
   display: flex;
   justify-content: center;
+  @media (max-width: 850px) {
+    display: none;
+  }
 `;
 
 export const DownloadContent = styled.div`
@@ -20,6 +27,10 @@ export const DownloadContent = styled.div`
   justify-content: center;
   width: 35%;
   flex-direction: column;
+  @media (max-width: 850px) {
+    padding: 1%;
+    width: 100%;
+  }
 `;
 
 export const Paragraph = styled.p`
