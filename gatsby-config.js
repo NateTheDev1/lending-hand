@@ -19,5 +19,6 @@ module.exports = {
         icon: 'src/images/GiantLogo.svg', // This path is relative to the root of the site.
       },
     },
+    'gatsby-plugin-offline',
   ],
 };
