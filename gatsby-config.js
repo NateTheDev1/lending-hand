@@ -4,9 +4,9 @@ module.exports = {
     description: 'Official Lending Hand Landing Page',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
-
+    `babel-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
